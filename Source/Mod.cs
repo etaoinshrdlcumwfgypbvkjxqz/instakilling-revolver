@@ -14,4 +14,12 @@ namespace Polyipseity.RimWorld.InstakillingRevolver
 
 		static ModStartup() { }
 	}
+
+	public class DamageWorker_Instakill : DamageWorker_AddInjury
+	{
+		protected override BodyPartRecord ChooseHitPart(DamageInfo dinfo, Pawn pawn)
+		{
+			return pawn.health.hediffSet.GetBrain();
+		}
+	}
 }

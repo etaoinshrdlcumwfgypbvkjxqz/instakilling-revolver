@@ -33,7 +33,7 @@
 				<_Parameter1>Instakilling Revolver</_Parameter1>
 		 </AssemblyAttributes>
 		 <AssemblyAttributes Include="AssemblyDescription">
-				<_Parameter1>This mod makes revolvers instakilling by destroying the brain of the target.</_Parameter1>
+				<_Parameter1>This mod makes revolvers instakilling by destroying the brain of the target. It also makes them 100% accurate.</_Parameter1>
 		 </AssemblyAttributes>
 		 <AssemblyAttributes Include="AssemblyCompany">
 				<_Parameter1>polyipseity</_Parameter1>
@@ -77,6 +77,11 @@
 		<Reference Include="System.Data.DataSetExtensions"/>
 		<Reference Include="System.Data"/>
 		<Reference Include="System.Xml"/>
+		<PackageReference Include="Lib.Harmony" Version="2.2.0" GeneratePathProperty="true"/>
+		<Reference Include="Harmony">
+			<HintPath>$(PkgLib_Harmony)\lib\net48\0Harmony.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
 		<Compile Include="Properties\AutoAssemblyInfo.cs"/>
 		<Compile Include="Properties\AssemblyInfo.cs"/>
 		<Compile Include="Mod.cs"/>

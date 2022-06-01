@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Bullet_Revolver"]/projectile/damageDef</xpath>
+		<value>
+			<damageDef>P_IKR_Bullet</damageDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyTouch</xpath>
+		<value>
+			<AccuracyTouch>1</AccuracyTouch>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyShort</xpath>
+		<value>
+			<AccuracyShort>1</AccuracyShort>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyMedium</xpath>
+		<value>
+			<AccuracyMedium>1</AccuracyMedium>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Gun_Revolver"]/statBases/AccuracyLong</xpath>
+		<value>
+			<AccuracyLong>1</AccuracyLong>
+		</value>
+	</Operation>
+</Patch>
