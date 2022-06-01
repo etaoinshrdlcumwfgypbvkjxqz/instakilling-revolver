@@ -1,6 +1,6 @@
 using Verse;
 
-namespace VARIABLE_NAMESPACE
+namespace Polyipseity.RimWorld.InstakillingRevolver
 {
 	public class EarlyModStartup : Mod
 	{
@@ -10,7 +10,7 @@ namespace VARIABLE_NAMESPACE
 	[StaticConstructorOnStartup]
 	public static class ModStartup
 	{
-		public const string ID = nameof(VARIABLE_NAMESPACE);
+		public const string ID = nameof(Polyipseity.RimWorld.InstakillingRevolver);
 
 		static ModStartup() { }
 	}
